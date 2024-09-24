@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pomodoro - paramètres</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h1>Paramètres du Pomodoro</h1>
+
+            <div>Modifier temps de travail :</div>
+            <input id="workMinutes" type="number" min="0" max="59">:<input id="workSecondes" type="number" min="0" max="59">
+            <div>Modifier temps de pause :</div>
+            <input id="pauseMinutes" type="number" min="0" max="59">:<input id="pauseSecondes" type="number" min="0" max="59">
+            <br>
+            <br>
+            <button id="valider">Valider</button>
+        </main>
+
+        <script src="./js/settings.js" defer></script>
+    </body>
+</html>
