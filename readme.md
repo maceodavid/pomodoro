@@ -1,3 +1,3 @@
-bienvenue sur pomodoro
+# Bienvenue sur Pomodoro
 
-réalisé par Macéo David et Clémence Pavy
+### Site réalisé par Macéo David et Clémence Pavy
