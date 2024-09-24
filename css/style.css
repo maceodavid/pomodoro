@@ -16,6 +16,14 @@ div {
     fill: white;
 }
 
+.parametres {
+    fill: white;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    display: flex;
+}
+
 .etat {
     box-shadow: 1px 1px 5px 5px black;
     border-radius: 17%;
@@ -31,9 +39,34 @@ div {
     width: fit-content;
     display: block;
     margin: auto;
-    margin-top : 2em;
+    margin-top: 2em;
     margin-bottom: 2em;
     padding: min(70px, 30%);
-    font-size: 150%;
+    font-size: 100px;
     font-weight: bold;
+}
+
+.valider {
+    background-color: black;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.valider:hover {
+    background-color: white;
+    color: black;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
 }

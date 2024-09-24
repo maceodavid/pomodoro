@@ -3,6 +3,7 @@ const workSecondesInput = document.getElementById("workSecondes");
 const pauseMinutesInput = document.getElementById("pauseMinutes");
 const pauseSecondesInput = document.getElementById("pauseSecondes");
 const valider = document.getElementById("valider");
+const messageValider = document.getElementById("messageValider");
 
 
 function intToMinutes(num) {
@@ -36,6 +37,8 @@ workSecondesInput.value = intToSecondes(numberify(localStorage.workTime));
 pauseMinutesInput.value = intToMinutes(numberify(localStorage.pauseTime));
 pauseSecondesInput.value = intToSecondes(numberify(localStorage.pauseTime));
 
+let timeout;
+
 valider.addEventListener("click", () => {
     const workMinutes = numberify(workMinutesInput.value);
     const workSecondes = numberify(workSecondesInput.value, true);
@@ -44,4 +47,12 @@ valider.addEventListener("click", () => {
 
     localStorage.workTime = workMinutes * 60 + workSecondes;
     localStorage.pauseTime = pauseMinutes * 60 + pauseSecondes;
+
+    if (timeout) clearTimeout(timeout);
+
+    messageValider.textContent = "Modifications validées !!!! 🎉🎉🎉";
+
+    timeout = setTimeout(() => {
+        messageValider.textContent = "";
+    }, 1500);
 });
