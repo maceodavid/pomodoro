@@ -1,0 +1,39 @@
+body {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    font-family: "Playwrite DE Grund", cursive;
+    font-style: normal;
+}
+
+div {
+    margin: 15px;
+}
+
+.startTimer {
+    width: 5em;
+    height: 5em;
+    fill: white;
+}
+
+.etat {
+    box-shadow: 1px 1px 5px 5px black;
+    border-radius: 17%;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+.timer {
+    box-shadow: 1px 1px 5px 5px black;
+    border-radius: 50%;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-top : 2em;
+    margin-bottom: 2em;
+    padding: min(70px, 30%);
+    font-size: 150%;
+    font-weight: bold;
+}
