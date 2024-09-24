@@ -11,13 +11,8 @@ function intToTimer(num) {
     return `${minutes}:${secondes}`;
 }
 
-/*
 const workTime = localStorage.workTime || 25 * 60;
 const pauseTime = localStorage.pauseTime || 5 * 60;
-*/
-
-const workTime = localStorage.workTime || 10;
-const pauseTime = localStorage.pauseTime || 5;
 
 
 timer.textContent = intToTimer(workTime);
