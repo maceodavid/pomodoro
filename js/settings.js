@@ -52,9 +52,9 @@ valider.addEventListener("click", () => {
     if (timeout) clearTimeout(timeout);
 
 	// message de confirmation
-	messageValider.style.opacity = 1;
+	messageValider.textContent = "Modifications validées";
 
     timeout = setTimeout(() => {
-		messageValider.style.opacity = 0;
+		messageValider.textContent = "";
     }, 1500);
 });

@@ -46,11 +46,6 @@ div {
     font-weight: bold;
 }
 
-.messageValider {
-	user-select: none;
-	opacity: 0;
-}
-
 .valider {
     background-color: black;
     border-radius: 20px;
