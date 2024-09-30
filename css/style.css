@@ -4,7 +4,7 @@ body {
     text-align: center;
     font-family: "Playwrite DE Grund", cursive;
     font-style: normal;
-    font-size: 2em;
+    font-size: 25px;
 }
 
 div {
@@ -30,7 +30,7 @@ div {
     display: block;
     margin: auto;
     padding: 5px;
-    font-size: 2em;
+    font-size: 25px;
 }
 
 .timer {
@@ -42,8 +42,13 @@ div {
     margin-top: 2em;
     margin-bottom: 2em;
     padding: min(70px, 30%);
-    font-size: 2em;
+    font-size: 25px;
     font-weight: bold;
+}
+
+.messageValider {
+	user-select: none;
+	opacity: 0;
 }
 
 .valider {
@@ -55,7 +60,7 @@ div {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 2em;
+    font-size: 25px;
 }
 
 .valider:hover {
@@ -67,7 +72,7 @@ input {
     background-color: white;
     color: black;
     padding: 0.01em 0.01em;
-    font-size: 2em;
+    font-size: 25px;
     border-radius: 4px;
     cursor: pointer;
     text-align: center;

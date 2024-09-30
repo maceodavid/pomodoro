@@ -35,6 +35,7 @@ startTimer.addEventListener("click", () => {
         interval = setInterval(() => {
             i--;
 
+			// basculement état pause/travail
             if (working && i <= 0) {
                 i = pauseTime;
                 working = false;

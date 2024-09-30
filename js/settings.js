@@ -31,7 +31,7 @@ function numberify(num, isSeconde=false) {
     return correctNum;
 }
 
-
+// insère la valeur actuelle stockée dans le local storage
 workMinutesInput.value = intToMinutes(numberify(localStorage.workTime));
 workSecondesInput.value = intToSecondes(numberify(localStorage.workTime));
 pauseMinutesInput.value = intToMinutes(numberify(localStorage.pauseTime));
@@ -45,14 +45,16 @@ valider.addEventListener("click", () => {
     const pauseMinutes = numberify(pauseMinutesInput.value);
     const pauseSecondes = numberify(pauseSecondesInput.value, true);
 
+	// modifie la valeur du local storage
     localStorage.workTime = workMinutes * 60 + workSecondes;
     localStorage.pauseTime = pauseMinutes * 60 + pauseSecondes;
 
     if (timeout) clearTimeout(timeout);
 
-    messageValider.textContent = "Modifications validées !!!! 🎉🎉🎉";
+	// message de confirmation
+	messageValider.style.opacity = 1;
 
     timeout = setTimeout(() => {
-        messageValider.textContent = "";
+		messageValider.style.opacity = 0;
     }, 1500);
 });
