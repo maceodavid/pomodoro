@@ -32,10 +32,10 @@ function numberify(num, isSeconde=false) {
 }
 
 // insère la valeur actuelle stockée dans le local storage
-workMinutesInput.value = intToMinutes(numberify(localStorage.workTime));
-workSecondesInput.value = intToSecondes(numberify(localStorage.workTime));
-pauseMinutesInput.value = intToMinutes(numberify(localStorage.pauseTime));
-pauseSecondesInput.value = intToSecondes(numberify(localStorage.pauseTime));
+workMinutesInput.value = intToMinutes(numberify(localStorage.workTime || 25 * 60));
+workSecondesInput.value = intToSecondes(numberify(localStorage.workTime || 25 * 60));
+pauseMinutesInput.value = intToMinutes(numberify(localStorage.pauseTime || 5 * 60));
+pauseSecondesInput.value = intToSecondes(numberify(localStorage.pauseTime || 5 * 60));
 
 let timeout;
 
