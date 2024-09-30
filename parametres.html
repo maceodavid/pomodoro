@@ -16,12 +16,19 @@
 
             <h1>Paramètres du Pomodoro</h1>
 
-            <div>Modifier temps de travail :</div>
-            <input id="workMinutes" type="number" min="0" max="59" for="workMinutes">:<input id="workSecondes" type="number" min="0" max="59" for="workSecondes">
-            <div>Modifier temps de pause :</div>
-            <input id="pauseMinutes" type="number" min="0" max="59" for="pauseMinutes">:<input id="pauseSecondes" type="number" min="0" max="59" for="pauseSecondes">
+			<label>
+				<div>Modifier temps de travail :</div>
+				<input id="workMinutes" type="number" min="0" max="59">:<input id="workSecondes" type="number" min="0" max="59">
+            </label>
+			
+			<label>
+				<div>Modifier temps de pause :</div>
+				<input id="pauseMinutes" type="number" min="0" max="59">:<input id="pauseSecondes" type="number" min="0" max="59">
+			</label>
+			
             <br>
             <br>
+			
 			<p id="messageValider" class="messageValider">Modifications validées</p>
 			<button id="valider" class="valider">Valider</button>
         </main>
